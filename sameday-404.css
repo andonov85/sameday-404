@@ -1,31 +1,35 @@
 .error-404-container {
     font-family: 'Roboto', sans-serif;
-    margin-top: 11rem;
-    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
 }
 
 .error-404-box {
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 45rem;
     border-top: 8px #ff914d solid;
     border-right: 8px #ff914d solid;
     border-bottom: 8px #ff914d solid;
 }
 
 .error-404-title {
+    font-size: 8rem;
     color: #ff914d;
-    font-size: 11rem;
     font-weight: 900;
     z-index: 1;
 }
 
 .error-404-message {
-    font-size: 3rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+
+.error-404-controls {
+    padding-left: 6rem;
 }
 
 .error-404-controls-container {
@@ -39,13 +43,9 @@
     width: 50px;
 }
 
-.error-404-controls {
-    padding-left: 8rem;
-}
-
 .error-404-controls .btn {
+    font-size: 2rem;
     color: #ff914d;
-    font-size: 2.7rem;
     font-weight: bold;
     text-transform: uppercase;
     border: none;
@@ -57,8 +57,8 @@
 }
 
 .error-404-image-container {
-    margin-left: -380px;
-    margin-top: 95px;
+    margin-left: 0;
+    margin-top: 20px;
 }
 
 .error-404-image-container img {
@@ -83,16 +83,43 @@
     padding-right: 0 !important;
 }
 
-/* For Large Device */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .error-404-image-container {
-        margin-left: -350px;
-        margin-top: 135px;
+.col-top {
+    z-index: 1;
+}
+
+/* For Mobile */
+@media screen and (min-width: 321px) {
+    .error-404-box {
+        height: 31rem;
+    }
+
+    .error-404-title {
+        font-size: 8rem;
+    }
+
+    .error-404-message {
+        font-size: 2rem;
+    }
+
+    .error-404-controls {
+        padding-left: 6rem;
+    }
+
+    .error-404-controls .btn {
+        font-size: 2rem;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) {
+    .error-404-container {
+        margin-top: 4rem;
+        margin-right: 2rem;
     }
 }
 
 /* For Medium Device */
-@media screen and (min-width: 781px) and (max-width: 991px) {
+@media screen and (min-width: 781px) {
     .error-404-container {
         margin-top: 7rem;
         margin-right: 3rem;
@@ -102,122 +129,46 @@
     }
 }
 
-/* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .error-404-container {
-        margin-top: 4rem;
-        margin-right: 2rem;
+/* For Large Device */
+@media screen and (min-width: 992px) {
+    .error-404-box {
+        height: 43rem;
+    }
+    .error-404-image-container {
+        margin-left: -350px;
+        margin-top: 106px;
     }
 }
 
-/* For Mobile */
-@media screen and (max-width: 320px) {
+/* For Extra Large Device */
+@media screen and (min-width: 1201px) {
     .error-404-container {
-        margin-top: 2rem;
-        margin-right: 3rem;
+        margin-top: 11rem;
+        margin-right: 6rem;
     }
-    .error-404-image-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    .error-404-box {
-        height: 25rem;
-    }
-    .error-404-title {
-        font-size: 8rem;
-    }
-    
-    .error-404-message {
-        font-size: 2rem;
-    }
-    .error-404-controls {
-        padding-left: 6rem;
-    }
-    .error-404-controls .btn {
-        font-size: 2rem;
-    }
-}
 
-/* For Mobile */
-@media screen and (min-width: 321px) and (max-width: 540px) {
-    .error-404-container {
-        margin-top: 2rem;
-        margin-right: 3rem;
-    }
-    .error-404-image-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
     .error-404-box {
-        height: 31rem;
+        height: 45rem;
     }
-    .error-404-title {
-        font-size: 8rem;
-    }
-    
-    .error-404-message {
-        font-size: 2rem;
-    }
-    .error-404-controls {
-        padding-left: 6rem;
-    }
-    .error-404-controls .btn {
-        font-size: 2rem;
-    }
-}
 
-/* For Mobile landscape */
-@media screen and (max-width: 823px) and (orientation : landscape) {
-    .error-404-container {
-        margin-top: 2rem;
-        margin-right: 3rem;
-    }
-    .error-404-image-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    .error-404-box {
-        height: 31rem;
-    }
     .error-404-title {
-        font-size: 8rem;
+        font-size: 11rem;
     }
-    
-    .error-404-message {
-        font-size: 2rem;
-    }
-    .error-404-controls {
-        padding-left: 6rem;
-    }
-    .error-404-controls .btn {
-        font-size: 2rem;
-    }
-}
 
-/* For iPad portrait */
-@media screen and (min-width : 768px) and (max-width : 1023px) and (orientation : portrait) {
-    .error-404-container {
-        margin-top: 2rem;
-        margin-right: 3rem;
-    }
-    .error-404-image-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    .error-404-box {
-        height: 31rem;
-    }
-    .error-404-title {
-        font-size: 8rem;
-    }
-    
     .error-404-message {
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
     .error-404-controls {
-        padding-left: 6rem;
+        padding-left: 8rem;
     }
+
     .error-404-controls .btn {
-        font-size: 2rem;
+        font-size: 2.7rem;
+    }
+
+    .error-404-image-container {
+        margin-left: -380px;
+        margin-top: 95px;
     }
 }
