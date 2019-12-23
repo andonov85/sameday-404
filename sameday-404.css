@@ -1,6 +1,5 @@
 .error-404-container {
     font-family: 'Roboto', sans-serif;
-    margin-top: 2rem;
     margin-right: 3rem;
 }
 
@@ -58,7 +57,7 @@
 
 .error-404-image-container {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 38px;
 }
 
 .error-404-image-container img {
@@ -78,6 +77,16 @@
 }
 
 /* Utils */
+.container-flex {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
 .row-no-padding > [class*="col-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -121,11 +130,7 @@
 /* For Medium Device */
 @media screen and (min-width: 781px) {
     .error-404-container {
-        margin-top: 7rem;
         margin-right: 3rem;
-    }
-    .error-404-image-container {
-        margin-top: 50px;
     }
 }
 
@@ -136,14 +141,12 @@
     }
     .error-404-image-container {
         margin-left: -350px;
-        margin-top: 106px;
     }
 }
 
 /* For Extra Large Device */
 @media screen and (min-width: 1201px) {
     .error-404-container {
-        margin-top: 11rem;
         margin-right: 6rem;
     }
 
@@ -169,6 +172,5 @@
 
     .error-404-image-container {
         margin-left: -380px;
-        margin-top: 95px;
     }
 }
